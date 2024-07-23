@@ -1,0 +1,1 @@
+{"version":3,"sources":["news-page.module.scss","news-page.module.css","../../core/mixins/mixins.scss"],"names":[],"mappings":"AAEA;EACI,aAAA;EACA,sBAAA;EACA,cAAA;ACDJ;ACQI;EFVJ;IAMQ,eAAA;IACA,8BAAA;ECAN;AACF;ACEI;EFVJ;IAUQ,kCAAA;ECEN;AACF;;ADCA;EACI,mBAAA;EACA,kBAAA;ACEJ","file":"news-page.module.css"}

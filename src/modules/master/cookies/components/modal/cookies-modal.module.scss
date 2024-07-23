@@ -1,0 +1,61 @@
+@import "../../../../../core/imports";
+
+.modal {
+    position: fixed;
+    z-index: 1080;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    .container {
+        @include media(md) {
+            max-width: 100rem;
+            margin: 7rem auto 0 auto;
+        }
+
+        .dialog {
+            overflow: auto;
+            width: 100%;
+            max-height: 100dvh;
+            padding: 5rem;
+            background-color: var(--base-white);
+            @include media(md) {
+                border-radius: var(--border-radius);
+            }
+
+            .title {
+                margin: 0 0 5rem 0;
+            }
+
+            .options {
+                margin: 2rem 0 7rem 0;
+            }
+
+            .controls {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-end;
+                justify-content: flex-end;
+                gap: Max(10px, 1rem);
+
+                span {
+                    width: 100%;
+                    @include media(md) {
+                        width: auto;
+                    }
+
+                    &:nth-child(1) {
+                        margin-right: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    &.isVisible {
+        display: block;
+    }
+}

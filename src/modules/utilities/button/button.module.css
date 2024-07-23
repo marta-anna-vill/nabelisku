@@ -1,0 +1,49 @@
+.Button {
+  display: inline-flex;
+  min-width: 12rem;
+  align-items: center;
+  justify-content: center;
+  padding: max(17px, 2rem) max(17px, 2.5rem);
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-smaller);
+  font-size: max(17px, 1.9rem);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  transition: 200ms ease-in-out;
+}
+.Button:has(svg) {
+  min-width: max(55px, 6.3rem);
+  height: max(55px, 6.3rem);
+  padding: 0;
+}
+.Button:has(svg) svg {
+  width: max(26px, 3rem);
+  height: max(26px, 3rem);
+}
+.Button:hover, .Button:focus {
+  cursor: pointer;
+}
+.Button.Button--primary {
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--base-white);
+}
+.Button.Button--primary svg path {
+  stroke: var(--base-white);
+}
+.Button.Button--primary:hover, .Button.Button--primary:focus {
+  border-color: var(--primary-color-hover);
+  background-color: var(--primary-color-hover);
+}
+.Button.Button--default {
+  border-color: var(--secondary-color);
+  background-color: transparent;
+  color: var(--secondary-color);
+}
+.Button.Button--default:hover, .Button.Button--default:focus {
+  background-color: var(--secondary-color);
+  color: var(--base-white);
+}/*# sourceMappingURL=button.module.css.map */

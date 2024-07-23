@@ -1,0 +1,320 @@
+:root {
+  --base-white: #fff;
+  --base-black: #000;
+  --primary-color: #A4B1F4;
+  --primary-color-hover: #3e52b4;
+  --secondary-color: #36393B;
+  --soft-primary-color: #BEC5FF;
+  --soft-secondary-color: #eff1ff;
+  --soft-secondary-line-color: #daddf1;
+  --base-grey: #f8f8f8;
+  --color-line: #e9e9e9;
+  --border-radius: 1.5rem;
+  --title-color: #36393B;
+  --text-color: var(--secondary-color);
+  --light-text: #a3a3a3;
+  --font-family: "Poppins", sans-serif;
+  --font-family-title: "Marcellus", sans-serif;
+}
+
+:root {
+  --space-side: 20px;
+  --space-side-md: 4.5rem;
+  --border-radius: Max(8px, 0.8rem);
+  --border-radius-smaller: Max(45px, 4.5rem);
+  --spacing: Max(25px, 3.8rem) 0;
+  --spacing-double: calc(Max(25px, 3.8rem) * 2) 0;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--soft-primary-color);
+}
+
+.SmallerContainer,
+.SmallContainer,
+.BaseContainer,
+.TextContainer {
+  max-width: 170rem;
+  padding-right: var(--space-side);
+  padding-left: var(--space-side);
+  margin: 0 auto;
+}
+@media (min-width: 720px) {
+  .SmallerContainer,
+  .SmallContainer,
+  .BaseContainer,
+  .TextContainer {
+    padding-right: var(--space-side-md);
+    padding-left: var(--space-side-md);
+  }
+}
+
+.SmallContainer {
+  max-width: 134rem;
+}
+
+.SmallerContainer {
+  max-width: 85rem;
+}
+
+.TextContainer {
+  max-width: 110rem;
+}
+
+.pageTitle {
+  padding: 0 0 5rem 0;
+}
+
+.Section {
+  padding: var(--spacing);
+}
+.Section .SectionTitle > *:first-child {
+  margin-top: 0;
+}
+.Section .SectionTitle > *:last-child:not(:first-child) {
+  margin-bottom: 0;
+}
+
+.Section--backgroundWhite {
+  background-color: var(--base-white);
+}
+.Section--backgroundWhite:has(+ .Section--backgroundWhite) {
+  padding-bottom: 0;
+}
+.Section--backgroundWhite + .Section--backgroundWhite {
+  padding-top: 0;
+}
+
+.Section--backgroundSoftPrimary {
+  background-color: var(--soft-primary-color);
+}
+
+.Section--backgroundSoftSecondary {
+  background-color: var(--soft-secondary-color);
+}
+
+.Widget {
+  padding: var(--spacing);
+}
+.Widget .Widget-button {
+  padding: var(--spacing);
+  padding-bottom: 0;
+  text-align: center;
+}
+
+h1,
+.h1 {
+  margin: max(50px, 6rem) 0 max(30px, 4rem) 0;
+  color: var(--title-color);
+  font-family: var(--font-family-title);
+  font-size: max(35px, 5rem);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: max(40px, 6.5rem);
+  text-transform: uppercase;
+}
+
+h2,
+.h2 {
+  margin: max(36px, 4.6rem) 0 max(22px, 3.2rem) 0;
+  color: var(--title-color);
+  font-family: var(--font-family-title);
+  font-size: max(28px, 4.5rem);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: max(35px, 5.5rem);
+  text-transform: uppercase;
+}
+
+h3,
+.h3 {
+  margin: max(30px, 4rem) 0 max(15px, 2rem) 0;
+  color: var(--title-color);
+  font-family: var(--font-family-title);
+  font-size: max(25px, 3.1rem);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: max(32px, 3.9rem);
+  text-transform: uppercase;
+}
+
+h4,
+.h4 {
+  margin: max(30px, 4rem) 0 max(15px, 2rem) 0;
+  color: var(--title-color);
+  font-family: var(--font-family-title);
+  font-size: max(21px, 2.6rem);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: max(27px, 3.2rem);
+  text-transform: uppercase;
+}
+
+.perex {
+  font-size: max(19px, 2rem);
+  letter-spacing: 0.2px;
+  line-height: max(27px, 2.8rem);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-container {
+  max-width: max(500px, 75%);
+}
+
+ul li::marker {
+  font-size: 0;
+}
+
+main ul {
+  padding: 0;
+  margin: 1rem 0;
+}
+main ul li {
+  position: relative;
+  padding: 0 0 0 max(20px, 2rem);
+  margin: 0 0 max(8px, 1rem) 0;
+}
+main ul li::before {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: max(7px, 0.7rem);
+  height: max(7px, 0.7rem);
+  border-radius: max(2px, 0.2rem);
+  background-color: var(--base-black);
+  content: "";
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--base-white);
+  font-family: var(--font-family);
+  font-size: max(16px, 1.7rem);
+  line-height: max(23px, 2.3rem);
+  scroll-padding-top: 180px;
+}
+
+@media only screen and (min-width: 320px) {
+  html {
+    font-size: 5px;
+  }
+}
+@media only screen and (min-width: 500px) {
+  html {
+    font-size: 6px;
+  }
+}
+@media only screen and (min-width: 728px) {
+  html {
+    font-size: 6.5px;
+  }
+}
+@media only screen and (min-width: 991px) {
+  html {
+    font-size: 7px;
+  }
+}
+@media only screen and (min-width: 1028px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width: 1924px) {
+  html {
+    font-size: 10.75px;
+  }
+}
+html .j-overlay {
+  z-index: 1100;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+hr {
+  border-top: 1px solid var(--color-line);
+  margin: 2rem 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.emailAddress {
+  word-break: break-all;
+}
+
+.form-title {
+  text-align: center;
+}
+
+form .form-inner {
+  display: grid;
+  padding: 5rem;
+  border-radius: var(--border-radius);
+  background-color: var(--color-line);
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+}
+form .form-inner .form-control:has(textarea) {
+  grid-column: 1/3;
+}
+
+label {
+  display: block;
+  margin: 0 0 1rem 0;
+  color: rgb(63, 63, 63);
+  font-weight: 700;
+}
+
+input {
+  width: 100%;
+  height: 6rem;
+  padding: 0 2rem;
+  border: 2px solid var(--base-white);
+  border-radius: var(--border-radius-smaller);
+  font-size: max(16px, 1.9rem);
+}
+input:focus {
+  border: 2px solid var(--primary-color);
+  outline: none;
+}
+
+textarea {
+  width: 100%;
+  min-height: 16rem;
+  border: 1px solid var(--color-line);
+  border-radius: var(--border-radius-smaller);
+}/*# sourceMappingURL=main.bundle.css.map */

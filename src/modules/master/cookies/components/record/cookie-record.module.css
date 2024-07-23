@@ -1,0 +1,25 @@
+.CookieRecord {
+  display: block;
+  padding: max(20px, 3rem);
+  border-radius: var(--border-radius);
+  background-color: var(--base-grey);
+}
+.CookieRecord .CookieRecord-name {
+  margin: 0 0 1.8rem 0;
+  font-size: max(17px, 1.9rem);
+  font-weight: 700;
+  line-height: 1;
+}
+.CookieRecord .CookieRecord-items {
+  display: grid;
+  grid-gap: 1rem;
+}
+.CookieRecord .CookieRecord-item {
+  display: grid;
+  font-size: max(15px, 1.5rem);
+  grid-template-columns: 16rem 1fr;
+  line-height: max(20px, 2rem);
+}
+.CookieRecord .CookieRecord-item .CookieRecord-itemName {
+  font-weight: 700;
+}/*# sourceMappingURL=cookie-record.module.css.map */

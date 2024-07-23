@@ -1,0 +1,47 @@
+.ContactItem {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  text-decoration: none;
+}
+.ContactItem:not(:last-child) {
+  margin: 0 0 max(20px, 2rem) 0;
+}
+.ContactItem .ContactItem-icon {
+  display: flex;
+  overflow: hidden;
+  width: max(85px, 10rem);
+  min-width: max(85px, 10rem);
+  height: max(85px, 10rem);
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  background-color: var(--primary-color);
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 200ms ease-in-out;
+}
+.ContactItem .ContactItem-icon svg {
+  width: max(40px, 5rem);
+  height: max(40px, 5rem);
+}
+.ContactItem .ContactItem-icon svg path {
+  stroke: var(--base-white);
+  transition: 200ms ease-in-out;
+}
+.ContactItem .ContactItem-name {
+  margin: 0 0 max(7px, 0.7rem) 0;
+  color: var(--title-color);
+  font-size: max(17px, 1.8rem);
+  font-weight: 700;
+}
+.ContactItem:hover .ContactItem-icon, .ContactItem:focus .ContactItem-icon {
+  background-color: var(--base-white);
+}
+.ContactItem:hover .ContactItem-icon svg path, .ContactItem:focus .ContactItem-icon svg path {
+  stroke: var(--primary-color);
+}
+.ContactItem:hover .ContactItem-name span, .ContactItem:focus .ContactItem-name span {
+  text-decoration: underline;
+}/*# sourceMappingURL=contact.module.css.map */

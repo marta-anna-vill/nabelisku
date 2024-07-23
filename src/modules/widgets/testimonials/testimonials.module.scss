@@ -1,0 +1,44 @@
+@import "../../../core/imports";
+
+.container {
+
+	.inner {
+		display: grid;
+		grid-gap: Max(20px, 3rem);
+		@include media(sm) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@include media(xl) {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+}
+
+.item {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	padding: Max(20px, 2rem);
+	border-radius: Max(8px, 0.8rem);
+	background-color: var(--base-grey);
+
+	@include media(sm) {
+		// max-width: calc(100% - 12rem);
+		// margin: 0 auto 0 0;
+	}
+
+	.itemText {
+		font-style: italic;
+	}
+
+	.itemPersonName {
+		padding: 1rem 0 0 0;
+		margin: auto 0 0 0;
+		font-weight: 600;
+		text-align: right;
+	}
+
+	&.isReversed {
+		margin: 0 0 0 auto;
+	}
+}

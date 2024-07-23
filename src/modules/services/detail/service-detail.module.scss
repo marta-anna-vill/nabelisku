@@ -1,0 +1,18 @@
+.description {
+    max-width: Max(500px, 75%);
+
+    .descriptionItem {
+        margin: 0 0 1rem 0;
+
+        &:first-child {
+
+            > *:first-child {
+                margin-top: 0;
+            }
+        }
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}

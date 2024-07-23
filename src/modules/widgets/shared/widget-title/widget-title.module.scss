@@ -1,0 +1,16 @@
+.container {
+    max-width: 80rem;
+
+    padding: var(--spacing);
+    padding-top: 0;
+    margin: 0 auto;
+    text-align: center;
+
+    > *:first-child {
+        margin: 0;
+    }
+
+    > *:last-child {
+        margin: 0;
+    }
+}

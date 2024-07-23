@@ -1,0 +1,44 @@
+{
+    "folders": [
+        {
+            "path": "./"
+        }
+    ],
+    "settings": {
+        "git.openRepositoryInParentFolders": "always",
+        "eslint.workingDirectories": [
+            {
+                "directory": "MHA",
+                "changeProcessCWD": true
+            }
+        ],
+        "eslint.enable": true,
+        "eslint.validate": [
+            "js",
+            "jsx",
+            "ts",
+            "tsx"
+        ],
+        "eslint.run": "onSave",
+        "editor.formatOnSave": true,
+        "eslint.format.enable": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "explicit",
+            "source.fixAll.stylelint": "explicit"
+        },
+        "stylelint.enable": true,
+        "stylelint.validate": [
+            "scss",
+            "css"
+        ],
+        "[typescript]": {
+            "editor.defaultFormatter": null
+        },
+        "[typescriptreact]": {
+            "editor.defaultFormatter": null
+        },
+        "[scss]": {
+            "editor.defaultFormatter": "stylelint.vscode-stylelint"
+        },
+    }
+}

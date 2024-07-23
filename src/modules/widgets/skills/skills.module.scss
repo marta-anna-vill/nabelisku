@@ -1,0 +1,36 @@
+@import "../../../core/imports";
+
+.SkillsTitle {
+    margin: 0 0 3rem 0;
+    text-align: center;
+}
+
+.SkillsContainer {
+    display: grid;
+    grid-gap: Max(40px, 4rem);
+    grid-template-columns: repeat(1, 1fr);
+
+    @include media(sm) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include media(md) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include media(xl) {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+.SkillItem {
+    text-align: center;
+
+    .SkillItem-name {
+        margin: Max(8px, 1rem) 0;
+        font-size: Max(18px, 2rem);
+        font-weight: 700;
+        line-height: Max(24px, 2.6rem);
+        text-align: center;
+    }
+}

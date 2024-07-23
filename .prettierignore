@@ -1,0 +1,9 @@
+.next/
+.env/
+node_modules/
+package.json
+package-lock.json
+pnpm-lock.yaml
+out/
+old-web-backup/
+netlify/

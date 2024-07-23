@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
+}
+.item svg {
+  width: max(36px, 4.5rem);
+  height: max(36px, 4.5rem);
+}
+.item svg path,
+.item svg rect {
+  stroke: var(--secondary-color);
+  transition: 200ms ease-in-out;
+}
+.item .itemName {
+  display: none;
+}
+.item:hover svg path,
+.item:hover svg rect, .item:focus svg path,
+.item:focus svg rect {
+  stroke: var(--primary-color);
+}/*# sourceMappingURL=social.module.css.map */

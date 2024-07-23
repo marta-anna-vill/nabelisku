@@ -1,0 +1,65 @@
+.Button {
+    display: inline-flex;
+    min-width: 12rem;
+    align-items: center;
+    justify-content: center;
+    padding: Max(17px, 2rem) Max(17px, 2.5rem);
+    border: 2px solid transparent;
+    border-radius: var(--border-radius-smaller);
+    font-size: Max(17px, 1.9rem);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    transition: 200ms ease-in-out;
+
+    &:has(svg) {
+        min-width: Max(55px, 6.3rem);
+        height: Max(55px, 6.3rem);
+        padding: 0;
+
+        svg {
+            width: Max(26px, 3rem);
+            height: Max(26px, 3rem);
+        }
+    }
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+    }
+
+
+
+    &.Button--primary {
+        border-color: var(--primary-color);
+        background-color: var(--primary-color);
+        color: var(--base-white);
+
+        svg {
+
+            path {
+                stroke: var(--base-white);
+            }
+        }
+
+        &:hover,
+        &:focus {
+            border-color: var(--primary-color-hover);
+            background-color: var(--primary-color-hover);
+        }
+    }
+
+    &.Button--default {
+        border-color: var(--secondary-color);
+        background-color: transparent;
+        color: var(--secondary-color);
+
+        &:hover,
+        &:focus {
+            background-color: var(--secondary-color);
+            color: var(--base-white);
+        }
+    }
+}

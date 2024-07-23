@@ -1,0 +1,85 @@
+h1,
+.h1 {
+  margin: max(50px, 6rem) 0 max(30px, 4rem) 0;
+  color: var(--title-color);
+  font-family: var(--font-family-title);
+  font-size: max(35px, 5rem);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: max(40px, 6.5rem);
+  text-transform: uppercase;
+}
+
+h2,
+.h2 {
+  margin: max(36px, 4.6rem) 0 max(22px, 3.2rem) 0;
+  color: var(--title-color);
+  font-family: var(--font-family-title);
+  font-size: max(28px, 4.5rem);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: max(35px, 5.5rem);
+  text-transform: uppercase;
+}
+
+h3,
+.h3 {
+  margin: max(30px, 4rem) 0 max(15px, 2rem) 0;
+  color: var(--title-color);
+  font-family: var(--font-family-title);
+  font-size: max(25px, 3.1rem);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: max(32px, 3.9rem);
+  text-transform: uppercase;
+}
+
+h4,
+.h4 {
+  margin: max(30px, 4rem) 0 max(15px, 2rem) 0;
+  color: var(--title-color);
+  font-family: var(--font-family-title);
+  font-size: max(21px, 2.6rem);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: max(27px, 3.2rem);
+  text-transform: uppercase;
+}
+
+.perex {
+  font-size: max(19px, 2rem);
+  letter-spacing: 0.2px;
+  line-height: max(27px, 2.8rem);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-container {
+  max-width: max(500px, 75%);
+}
+
+ul li::marker {
+  font-size: 0;
+}
+
+main ul {
+  padding: 0;
+  margin: 1rem 0;
+}
+main ul li {
+  position: relative;
+  padding: 0 0 0 max(20px, 2rem);
+  margin: 0 0 max(8px, 1rem) 0;
+}
+main ul li::before {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: max(7px, 0.7rem);
+  height: max(7px, 0.7rem);
+  border-radius: max(2px, 0.2rem);
+  background-color: var(--base-black);
+  content: "";
+}/*# sourceMappingURL=typography.css.map */

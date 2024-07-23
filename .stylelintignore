@@ -1,0 +1,8 @@
+out/
+node_modules/
+package.json
+pnpm-lock.yaml
+vite.config.ts
+old-web-backup/
+.next/
+netlify/

@@ -1,0 +1,94 @@
+@import "../../../../core/imports";
+
+.ServiceSamplesContainer {
+    display: grid;
+    grid-gap: Max(20px, 3rem);
+    @include media(xs) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include media(lg) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.ServiceSamplesTitle {
+    margin-top: 0;
+}
+
+.ServiceSample {
+    border-radius: var(--border-radius);
+    background-color: var(--base-white);
+
+    .ServiceSample-image {
+        position: relative;
+        overflow: hidden;
+        height: Max(300px, 32rem);
+        border-radius: var(--border-radius);
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 200ms ease;
+        }
+
+        .ServiceSample-imagesCount {
+            position: absolute;
+            right: Max(14px, 1.4rem);
+            bottom: Max(14px, 1.4rem);
+            display: flex;
+            width: Max(50px, 5rem);
+            height: Max(50px, 5rem);
+            align-items: center;
+            justify-content: center;
+            border-radius: var(--border-radius);
+            background-color: var(--base-white);
+            box-shadow: 4px 4px 20px -3px rgba(0, 0, 0, 0.3);
+            font-size: Max(14px, 1.4rem);
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        &:hover,
+        &:focus {
+            cursor: pointer;
+
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .ServiceSample-text {
+        padding: Max(18px, 1.8rem) Max(20px, 2rem);
+        font-size: Max(15px, 1.5rem);
+        line-height: Max(20px, 2rem);
+    }
+}
+
+.YourServiceSample {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: Max(20px, 2rem);
+    border: 1px solid var(--soft-secondary-line-color);
+    border-radius: var(--border-radius);
+    background-color: var(--base-white);
+    text-align: center;
+
+    .YourServiceSample-title {
+        color: var(--secondary-color);
+        font-size: Max(24px, 2.7rem);
+        font-weight: 700;
+        line-height: Max(30px, 3.4rem);
+    }
+
+    .YourServiceSample-button {
+        margin: 4rem 0 0 0;
+    }
+}

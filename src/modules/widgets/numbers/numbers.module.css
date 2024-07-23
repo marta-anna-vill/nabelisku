@@ -1,0 +1,45 @@
+.Widget--numbers {
+  padding: var(--spacing-double);
+}
+
+.container .inner {
+  display: grid;
+  grid-gap: max(40px, 4rem);
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 528px) {
+  .container .inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 720px) {
+  .container .inner {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.item .itemValue {
+  color: var(--title-color);
+  font-size: max(50px, 6rem);
+  font-weight: 700;
+  line-height: max(55px, 6.6rem);
+  text-align: center;
+}
+.item .itemValue::after {
+  top: auto;
+  left: 50%;
+  display: flex;
+  width: 100%;
+  max-width: 80px;
+  height: 2px;
+  margin: max(12px, 1.8rem) auto;
+  background-color: var(--primary-color);
+  content: "";
+}
+.item .itemTitle {
+  margin: max(8px, 1rem) 0 0 0;
+  font-size: max(18px, 2rem);
+  font-weight: 700;
+  line-height: max(24px, 2.6rem);
+  text-align: center;
+}/*# sourceMappingURL=numbers.module.css.map */

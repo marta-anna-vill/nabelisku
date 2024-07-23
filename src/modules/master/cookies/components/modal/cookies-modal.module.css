@@ -1,0 +1,55 @@
+.modal {
+  position: fixed;
+  z-index: 1080;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+@media (min-width: 720px) {
+  .modal .container {
+    max-width: 100rem;
+    margin: 7rem auto 0 auto;
+  }
+}
+.modal .container .dialog {
+  overflow: auto;
+  width: 100%;
+  max-height: 100dvh;
+  padding: 5rem;
+  background-color: var(--base-white);
+}
+@media (min-width: 720px) {
+  .modal .container .dialog {
+    border-radius: var(--border-radius);
+  }
+}
+.modal .container .dialog .title {
+  margin: 0 0 5rem 0;
+}
+.modal .container .dialog .options {
+  margin: 2rem 0 7rem 0;
+}
+.modal .container .dialog .controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: max(10px, 1rem);
+}
+.modal .container .dialog .controls span {
+  width: 100%;
+}
+@media (min-width: 720px) {
+  .modal .container .dialog .controls span {
+    width: auto;
+  }
+}
+.modal .container .dialog .controls span:nth-child(1) {
+  margin-right: auto;
+}
+.modal.isVisible {
+  display: block;
+}/*# sourceMappingURL=cookies-modal.module.css.map */

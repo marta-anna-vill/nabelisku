@@ -1,0 +1,160 @@
+@import "../../../core/imports";
+
+.Footer {
+    position: relative;
+    padding: var(--spacing-double);
+    padding-bottom: 2rem;
+    border-top: 1px solid #f0f0f0;
+    background-color: var(--base-white);
+
+    .Footer-top {
+        margin: 0 0 5rem 0;
+
+        .Footer-columns {
+            display: grid;
+            grid-gap: 3rem;
+
+            @include media(sm) {
+                grid-template-columns: 1fr 1fr;
+
+            }
+
+            @include media(lg) {
+                grid-template-columns: 1fr 1fr 1fr;
+
+            }
+        }
+    }
+
+    .Footer-bottom {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem 10rem;
+
+        .Footer-bottomLogo {
+            position: relative;
+            z-index: 2;
+            padding: 0 1rem 0 0;
+            background-color: var(--base-white);
+
+            img {
+                width: auto;
+                height: Max(40px, 6rem);
+            }
+        }
+
+        .Footer-bottomLink {
+            position: relative;
+            z-index: 2;
+            padding: 0 0 0 1rem;
+            background-color: var(--base-white);
+
+            a {
+                font-size: Max(14px, 1.6rem);
+                text-decoration: underline;
+
+                &:hover,
+                &:focus {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        &::after {
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            border-bottom: 1px solid #f0f0f0;
+            content: "";
+        }
+    }
+}
+
+.FooterColumn-title {
+    margin: 0 0 3rem 0;
+}
+
+.FooterContactBox {
+
+    .FooterContactItem {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        text-decoration: none;
+
+        &:not(:last-child) {
+            margin: 0 0 Max(20px, 2rem) 0;
+        }
+
+        .FooterContactItem-image {
+            display: flex;
+            overflow: hidden;
+            width: Max(85px, 10rem);
+            height: Max(85px, 10rem);
+            align-items: center;
+            justify-content: center;
+            border-radius: var(--border-radius);
+            background-color: var(--base-white);
+            object-fit: cover;
+            transition: 200ms ease-in-out;
+
+            svg {
+                width: Max(40px, 5rem);
+                height: Max(40px, 5rem);
+
+                path {
+                    stroke: var(--primary-color);
+                    transition: 200ms ease-in-out;
+                }
+            }
+        }
+
+        .FooterContactItem-position {
+            color: #555555;
+            font-size: Max(14px, 1.4rem);
+            text-transform: uppercase;
+        }
+
+        .FooterContactItem-name {
+            margin: 0 0 Max(7px, 0.7rem) 0;
+            color: var(--title-color);
+            font-size: Max(17px, 1.8rem);
+            font-weight: 700;
+        }
+
+        .FooterContactItem-phone {
+            margin: Max(7px, 0.7rem) 0 0 0;
+
+            span {
+                font-weight: 700;
+                text-decoration: underline;
+            }
+        }
+
+        &:hover,
+        &:focus {
+
+            .FooterContactItem-image {
+                background-color: var(--primary-color);
+
+                svg {
+
+                    path {
+                        stroke: var(--base-white);
+                    }
+                }
+            }
+
+            .FooterContactItem-phone {
+
+                span {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

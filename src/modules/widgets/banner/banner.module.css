@@ -1,0 +1,60 @@
+.container .inner {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  min-height: 52rem;
+  align-items: center;
+  border-radius: max(8px, 0.8rem);
+  background-color: var(--secondary-color);
+}
+.container .inner .content {
+  position: relative;
+  z-index: 3;
+  max-width: 100rem;
+  padding: max(30px, 3rem) max(20px, 3rem);
+  margin: 0 auto;
+  color: var(--base-white);
+  text-align: center;
+}
+.container .inner .content > *:first-child {
+  margin: 0 0 max(30px, 4rem) 0;
+  color: var(--base-white);
+}
+.container .inner .content a {
+  font-weight: 700;
+}
+.container .inner .content .contactsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: max(30px, 4rem) 0 0 0;
+  gap: 2rem;
+}
+
+.contactItem {
+  display: flex;
+  min-height: max(52px, 8.5rem);
+  align-items: center;
+  justify-content: center;
+  border-radius: max(8px, 0.8rem);
+  aspect-ratio: 1/1;
+  background-color: var(--base-white);
+  transition: 200ms ease-in-out;
+}
+.contactItem svg {
+  width: max(29px, 4rem);
+  height: max(29px, 4rem);
+}
+.contactItem svg path,
+.contactItem svg rect {
+  stroke: var(--primary-color);
+  transition: 200ms ease-in-out;
+}
+.contactItem:hover, .contactItem:focus {
+  background-color: var(--primary-color);
+}
+.contactItem:hover svg path,
+.contactItem:hover svg rect, .contactItem:focus svg path,
+.contactItem:focus svg rect {
+  stroke: var(--base-white);
+}/*# sourceMappingURL=banner.module.css.map */

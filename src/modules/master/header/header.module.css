@@ -1,0 +1,279 @@
+.container {
+  max-width: 160rem;
+  margin: 0 auto;
+}
+
+.header {
+  position: fixed;
+  z-index: 1020;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid #e4e4e4;
+  background-color: var(--base-white);
+  box-shadow: 0px 4px 75px -12px rgba(0, 0, 0, 0.1);
+}
+.header .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (min-width: 1600px) {
+  .header .inner {
+    align-items: unset;
+  }
+}
+.header .inner .logo {
+  padding: 1rem 8rem 1rem 0;
+}
+.header .inner .logo a {
+  display: flex;
+  height: max(60px, 6.5rem);
+  align-items: center;
+  color: var(--text-color);
+  font-size: max(20px, 3rem);
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.header .inner .menu {
+  position: absolute;
+  top: calc(100% + 1px);
+  left: 0;
+  display: none;
+  overflow: auto;
+  width: 100%;
+  max-height: calc(100vh - max(71px, 8.4rem));
+  padding: 3rem 0;
+  border-bottom: 1px solid #e4e4e4;
+  margin: 0 0 0 auto;
+  background-color: var(--base-white);
+  box-shadow: 0px 4px 75px -12px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 1600px) {
+  .header .inner .menu {
+    position: static;
+    display: block;
+    overflow: unset;
+    width: auto;
+    max-height: unset;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+  }
+}
+.header .inner .menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+@media (min-width: 1600px) {
+  .header .inner .menu ul {
+    display: flex;
+    height: 100%;
+  }
+}
+.header .inner .menu ul li {
+  position: relative;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  margin: 0 max(20px, 2.5rem);
+  gap: 1rem;
+}
+@media (min-width: 1600px) {
+  .header .inner .menu ul li {
+    flex-direction: row;
+  }
+}
+.header .inner .menu ul li a,
+.header .inner .menu ul li span {
+  display: flex;
+  min-height: 40px;
+  align-items: center;
+  color: var(--base-black);
+  font-family: var(--font-family-title);
+  font-size: max(17px, 1.8rem);
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1;
+  text-decoration: none;
+  transition: 200ms ease;
+}
+@media (min-width: 1600px) {
+  .header .inner .menu ul li a,
+  .header .inner .menu ul li span {
+    height: 100%;
+  }
+}
+.header .inner .menu ul li:last-child {
+  margin-right: 0;
+}
+.header .inner .menu ul li:last-child a,
+.header .inner .menu ul li:last-child span {
+  padding-right: 0;
+}
+.header .inner .menu ul li .openner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+}
+@media (min-width: 1600px) {
+  .header .inner .menu ul li .openner {
+    position: static;
+  }
+}
+.header .inner .menu ul li .openner svg {
+  transition: 200ms ease;
+}
+.header .inner .menu ul li ul {
+  position: relative;
+  display: none;
+  min-width: 32rem;
+  flex-direction: column;
+  border-radius: var(--border-radius-smaller);
+  margin: 0 0 2rem 0;
+  background-color: var(--base-white);
+  gap: 1rem;
+}
+@media (min-width: 1600px) {
+  .header .inner .menu ul li ul {
+    position: absolute;
+    top: calc(100% - 15px);
+    left: -15px;
+    height: auto;
+    padding: max(10px, 1rem);
+    margin: 0;
+    box-shadow: 2px 2px 24px -3px rgba(0, 0, 0, 0.1);
+  }
+}
+.header .inner .menu ul li ul li {
+  display: block;
+  margin: 0;
+}
+.header .inner .menu ul li ul li a {
+  padding: max(10px, 1.5rem);
+  border-radius: var(--border-radius-smaller);
+  background-color: var(--soft-primary-color);
+  color: var(--base-black);
+  font-size: max(15px, 1.6rem);
+  font-weight: 400;
+  line-height: max(18px, 2.2rem);
+  text-transform: none;
+  transition: 200ms ease;
+}
+.header .inner .menu ul li ul li a:hover, .header .inner .menu ul li ul li a:focus {
+  background-color: var(--primary-color);
+  color: var(--base-white);
+}
+.header .inner .menu ul li.isActive > a,
+.header .inner .menu ul li.isActive > span {
+  color: var(--primary-color);
+}
+@media (min-width: 1600px) {
+  .header .inner .menu ul li:hover > a,
+  .header .inner .menu ul li:hover > span, .header .inner .menu ul li:focus > a,
+  .header .inner .menu ul li:focus > span {
+    color: var(--primary-color);
+  }
+  .header .inner .menu ul li:hover .openner svg, .header .inner .menu ul li:focus .openner svg {
+    transform: rotate(180deg);
+  }
+  .header .inner .menu ul li:hover ul, .header .inner .menu ul li:focus ul {
+    display: flex;
+  }
+}
+.header .inner .menu ul li.isOpen > a,
+.header .inner .menu ul li.isOpen > span {
+  color: var(--primary-color);
+}
+.header .inner .menu ul li.isOpen .openner svg {
+  transform: rotate(180deg);
+}
+.header .inner .menu ul li.isOpen ul {
+  display: flex;
+}
+.header .inner .hamburger {
+  display: flex;
+  width: max(30px, 4rem);
+  height: max(30px, 4rem);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+@media (min-width: 1600px) {
+  .header .inner .hamburger {
+    display: none;
+  }
+}
+.header .inner .hamburger span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+}
+.header .contact {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  order: -1;
+  padding: 1rem 0 0 0;
+}
+.header .contact.desktop {
+  display: none;
+}
+@media (min-width: 1600px) {
+  .header .contact.desktop {
+    display: flex;
+  }
+}
+.header .contact.respo {
+  display: flex;
+}
+@media (min-width: 1600px) {
+  .header .contact.respo {
+    display: none;
+  }
+}
+@media (min-width: 1600px) {
+  .header .contact {
+    order: unset;
+    padding: 0;
+  }
+}
+.header .contact .contactInner {
+  display: flex;
+  align-items: center;
+  color: var(--base-black);
+  gap: 1.8rem;
+  text-decoration: none;
+}
+.header .contact .contactInner svg {
+  width: max(20px, 3rem);
+  height: max(20px, 3rem);
+}
+.header .contact .contactInner .contactContentPhone {
+  font-size: max(14px, 1.7rem);
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: right;
+  transition: 200ms ease-in-out;
+}
+.header .contact .contactInner .contactContentTime {
+  font-size: max(13px, 1.4rem);
+  line-height: 1.6;
+  text-align: right;
+}
+.header .contact:hover .contactContentPhone, .header .contact:focus .contactContentPhone {
+  color: var(--primary-color);
+}
+.header.isOpen .menu {
+  display: block;
+}
+
+.spacing {
+  height: max(71px, 8.4rem);
+}/*# sourceMappingURL=header.module.css.map */

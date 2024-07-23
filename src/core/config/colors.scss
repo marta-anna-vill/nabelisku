@@ -1,0 +1,28 @@
+:root {
+	// Colors
+	--base-white: #fff;
+	--base-black: #000;
+	--primary-color: #A4B1F4;
+	--primary-color-hover: #3e52b4;
+	--secondary-color: #36393B;
+	--soft-primary-color: #BEC5FF;
+	--soft-secondary-color: #eff1ff;
+	--soft-secondary-line-color: #daddf1;
+
+	// Grey colors
+	--base-grey: #f8f8f8;
+
+	// Color line
+	--color-line: #e9e9e9;
+
+	// Values
+	--border-radius: 1.5rem;
+
+
+	// typography
+	--title-color: #36393B;
+    --text-color: var(--secondary-color);
+    --light-text: #a3a3a3;
+	--font-family: "Poppins", sans-serif;
+	--font-family-title: "Marcellus", sans-serif;
+}

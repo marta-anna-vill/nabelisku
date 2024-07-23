@@ -1,0 +1,6 @@
+.Wysiwyg {
+  max-width: max(500px, 80%);
+}
+.Wysiwyg > *:first-child {
+  margin-top: 0;
+}/*# sourceMappingURL=wysiwyg.module.css.map */

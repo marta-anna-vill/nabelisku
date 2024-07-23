@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--base-white);
+  font-family: var(--font-family);
+  font-size: max(16px, 1.7rem);
+  line-height: max(23px, 2.3rem);
+  scroll-padding-top: 180px;
+}
+
+@media only screen and (min-width: 320px) {
+  html {
+    font-size: 5px;
+  }
+}
+@media only screen and (min-width: 500px) {
+  html {
+    font-size: 6px;
+  }
+}
+@media only screen and (min-width: 728px) {
+  html {
+    font-size: 6.5px;
+  }
+}
+@media only screen and (min-width: 991px) {
+  html {
+    font-size: 7px;
+  }
+}
+@media only screen and (min-width: 1028px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width: 1924px) {
+  html {
+    font-size: 10.75px;
+  }
+}
+html .j-overlay {
+  z-index: 1100;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+hr {
+  border-top: 1px solid var(--color-line);
+  margin: 2rem 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.emailAddress {
+  word-break: break-all;
+}/*# sourceMappingURL=base.css.map */

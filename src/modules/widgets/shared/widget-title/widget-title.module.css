@@ -1,0 +1,13 @@
+.container {
+  max-width: 80rem;
+  padding: var(--spacing);
+  padding-top: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.container > *:first-child {
+  margin: 0;
+}
+.container > *:last-child {
+  margin: 0;
+}/*# sourceMappingURL=widget-title.module.css.map */

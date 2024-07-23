@@ -1,0 +1,87 @@
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--soft-primary-color);
+}
+
+.SmallerContainer,
+.SmallContainer,
+.BaseContainer,
+.TextContainer {
+    max-width: 170rem;
+    padding-right: var(--space-side);
+    padding-left: var(--space-side);
+    margin: 0 auto;
+
+    @include media(md) {
+        padding-right: var(--space-side-md);
+        padding-left: var(--space-side-md);
+    }
+}
+
+.SmallContainer {
+    max-width: 134rem;
+}
+
+.SmallerContainer {
+    max-width: 85rem;
+}
+
+.TextContainer {
+    max-width: 110rem;
+}
+
+.pageTitle {
+    padding: 0 0 5rem 0;
+}
+
+.Section {
+    padding: var(--spacing);
+
+    .SectionTitle {
+
+        > *:first-child {
+            margin-top: 0;
+        }
+
+        > *:last-child:not(:first-child) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.Section--backgroundWhite {
+    background-color: var(--base-white);
+
+    &:has(+ .Section--backgroundWhite) {
+        padding-bottom: 0;
+    }
+
+    & + .Section--backgroundWhite {
+        padding-top: 0;
+    }
+}
+
+.Section--backgroundSoftPrimary {
+    background-color: var(--soft-primary-color);
+}
+
+.Section--backgroundSoftSecondary {
+    background-color: var(--soft-secondary-color);
+}
+
+.Widget {
+    padding: var(--spacing);
+
+    .Widget-button {
+        padding: var(--spacing);
+        padding-bottom: 0;
+        text-align: center;
+    }
+}

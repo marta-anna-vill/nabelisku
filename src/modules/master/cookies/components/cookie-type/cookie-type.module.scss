@@ -1,0 +1,26 @@
+@import "../../../../../core/imports";
+
+.item {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        margin: 0 2rem 0 0;
+        color: var(--secondary-color);
+        font-weight: 400;
+
+        strong {
+            display: block;
+            margin: 0 0 1rem 0;
+            font-size: Max(17px, 1.9rem);
+            font-weight: 700;
+            line-height: Max(22px, 2.4rem);
+        }
+    }
+
+    &:not(:last-child) {
+        padding: 0 0 Max(8px, 1.5rem) 0;
+        border-bottom: 1px solid var(--color-line);
+        margin: 0 0 Max(8px, 1.5rem) 0;
+    }
+}

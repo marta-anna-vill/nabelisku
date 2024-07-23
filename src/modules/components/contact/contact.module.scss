@@ -1,0 +1,64 @@
+.ContactItem {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    text-decoration: none;
+
+    &:not(:last-child) {
+        margin: 0 0 Max(20px, 2rem) 0;
+    }
+
+    .ContactItem-icon {
+        display: flex;
+        overflow: hidden;
+        width: Max(85px, 10rem);
+        min-width: Max(85px, 10rem);
+        height: Max(85px, 10rem);
+        align-items: center;
+        justify-content: center;
+        border: 2px solid var(--primary-color);
+        border-radius: var(--border-radius);
+        background-color: var(--primary-color);
+        object-fit: cover;
+        transition: 200ms ease-in-out;
+
+        svg {
+            width: Max(40px, 5rem);
+            height: Max(40px, 5rem);
+
+            path {
+                stroke: var(--base-white);
+                transition: 200ms ease-in-out;
+            }
+        }
+    }
+
+    .ContactItem-name {
+        margin: 0 0 Max(7px, 0.7rem) 0;
+        color: var(--title-color);
+        font-size: Max(17px, 1.8rem);
+        font-weight: 700;
+    }
+
+    &:hover,
+    &:focus {
+
+        .ContactItem-icon {
+            background-color: var(--base-white);
+
+            svg {
+
+                path {
+                    stroke: var(--primary-color);
+                }
+            }
+        }
+
+        .ContactItem-name {
+
+            span {
+                text-decoration: underline;
+            }
+        }
+    }
+}

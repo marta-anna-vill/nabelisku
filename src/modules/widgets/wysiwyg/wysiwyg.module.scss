@@ -1,0 +1,7 @@
+.Wysiwyg {
+    max-width: Max(500px, 80%);
+
+    > *:first-child {
+        margin-top: 0;
+    }
+}

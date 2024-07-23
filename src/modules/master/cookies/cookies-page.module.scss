@@ -1,0 +1,35 @@
+.settingsTitle {
+    margin: 0 0 3.5rem 0;
+}
+
+.settingsButtons {
+    margin: 3.5rem 0 0 0;
+}
+
+.CookiesPageContent {
+    padding: Max(25px, 2.5rem) 0;
+
+    > *:first-child {
+        margin-top: 0;
+
+        small {
+            font-size: Max(14px, 2rem);
+        }
+    }
+}
+
+.CookieRecordContainer {
+    display: grid;
+    margin: 3rem 0 0 0;
+    grid-gap: 1rem;
+}
+
+.CookiesTypeContainer {
+
+    .CookiesTypeContainer-side {
+
+        h3 {
+            margin-top: 0;
+        }
+    }
+}

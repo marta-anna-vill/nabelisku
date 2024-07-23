@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius);
+
+    svg {
+        width: max(36px, 4.5rem);
+        height: max(36px, 4.5rem);
+
+        path,
+        rect {
+            stroke: var(--secondary-color);
+            transition: 200ms ease-in-out;
+        }
+    }
+
+    .itemName {
+        display: none;
+    }
+
+    &:hover,
+    &:focus {
+
+        svg {
+
+            path,
+            rect {
+                stroke: var(--primary-color);
+            }
+        }
+    }
+}

@@ -1,0 +1,73 @@
+@import "../../../../../core/imports";
+
+.container {
+    position: fixed;
+    z-index: 1070;
+    bottom: 0;
+    left: 0;
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    background-color: var(--base-white);
+    box-shadow: 0px -9px 35px -7px rgba(0, 0, 0, 0.1);
+
+    svg {
+        position: absolute;
+        z-index: -1;
+        bottom: -6rem;
+        left: -6rem;
+        width: 50rem;
+        height: 50rem;
+        transform: rotate(-45deg);
+
+        @include media(md) {
+            top: -5rem;
+            left: 8rem;
+        }
+
+        path {
+            stroke: #f5f5f5;
+        }
+
+        circle {
+            fill: #f5f5f5;
+        }
+    }
+
+    .inner {
+        display: grid;
+        padding: 5rem 0;
+        grid-gap: 5rem 10rem;
+        @include media(xl) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .content {
+            font-size: Max(14px, 1.4rem);
+            line-height: Max(20px, 2.1rem);
+
+            .title {
+                margin: 0 0 2rem 0;
+            }
+        }
+
+        .controls {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            justify-content: flex-end;
+            gap: Max(10px, 1rem);
+
+            span {
+                width: 100%;
+                @include media(md) {
+                    width: auto;
+                }
+            }
+        }
+    }
+
+    &.isVisible {
+        display: block;
+    }
+}
