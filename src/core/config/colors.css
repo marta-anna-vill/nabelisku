@@ -1,11 +1,11 @@
 :root {
   --base-white: #fff;
   --base-black: #000;
-  --primary-color: #A4B1F4;
-  --primary-color-hover: #3e52b4;
-  --secondary-color: #36393B;
-  --soft-primary-color: #BEC5FF;
-  --soft-secondary-color: #eff1ff;
+  --primary-color: #4E6E58;
+  --primary-color-hover: #283b2e;
+  --secondary-color: #9F7E69;
+  --soft-primary-color: #E0EFE5;
+  --soft-secondary-color: #FFF8E7;
   --soft-secondary-line-color: #daddf1;
   --base-grey: #f8f8f8;
   --color-line: #e9e9e9;

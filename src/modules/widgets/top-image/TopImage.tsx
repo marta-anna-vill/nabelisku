@@ -42,7 +42,7 @@ export const TopImageWidget: React.FC<ITopImageWidget> = (props) => {
                                     fill='#F3EDAF'
                                 />
                             </svg> */}
-                            <svg
+                            {/* <svg
                                 className={styles.ornament2}
                                 xmlns='http://www.w3.org/2000/svg'
                                 width='420'
@@ -68,7 +68,7 @@ export const TopImageWidget: React.FC<ITopImageWidget> = (props) => {
                                         <stop offset='1' stop-color='#eeeeee' stop-opacity='0.31' />
                                     </linearGradient>
                                 </defs>
-                            </svg>
+                            </svg> */}
 
                             <div className={`${styles.content} perex`}>
                                 <h1>{props.item.title}</h1>
@@ -89,7 +89,7 @@ export const TopImageWidget: React.FC<ITopImageWidget> = (props) => {
                             </div>
 
                             <div className={styles.background}>
-                                <svg
+                                {/* <svg
                                     className={styles[`TopImage-backgroundOrnament`]}
                                     width='130'
                                     height='927'
@@ -115,7 +115,7 @@ export const TopImageWidget: React.FC<ITopImageWidget> = (props) => {
                                         d='M0.5 130.5L0.5 0.5C0.5 0.5 276.902 127.5 464 127.5C651.098 127.5 927.5 0.5 927.5 0.5V130.5L0.5 130.5Z'
                                         fill='#2A2A29'
                                     />
-                                </svg>
+                                </svg> */}
 
                                 {props.item.video && (
                                     <React.Fragment>

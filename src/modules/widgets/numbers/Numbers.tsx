@@ -19,7 +19,7 @@ export const NumbersWidget: React.FC<TNumbersWidget> = (props) => {
             <div className={styles.inner}>
                 {props.items.map((item, index) => (
                     <div className={styles.item} key={index}>
-                        <div className={styles.itemValue}>{item.number + ` ` + item.unit}</div>
+                        <div className={styles.itemValue}>{` ` + item.unit}</div>
                         <div className={styles.itemTitle}>{item.name}</div>
                     </div>
                 ))}

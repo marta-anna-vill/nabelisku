@@ -4,8 +4,8 @@ import { CookiesHelper } from '../../../../helpers/cookies-helper';
 import { CookieHelper } from '../helpers/cookie-helper';
 import { useCookiesStore } from '../store/cookies-store';
 
-const COOKIES_SUBMIT_EVENT_NAME = `vinarstvitoporcer-cookies`;
-export const COOKIES_SITE = `vinarstvitoporcer-cookies`;
+const COOKIES_SUBMIT_EVENT_NAME = `nabelisku-cookies`;
+export const COOKIES_SITE = `nabelisku-cookies`;
 export const COOKIES_TECHNICAL = `cookies-technical`;
 export const COOKIES_ANALYTICS = `cookies-analytics`;
 export const COOKIES_CONVERSION = `cookies-conversion`;

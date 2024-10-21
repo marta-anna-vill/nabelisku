@@ -8,7 +8,7 @@
 
     .inner {
         display: grid;
-        grid-gap: Max(40px, 4rem);
+        grid-gap: Max(50px, 5rem);
         grid-template-columns: repeat(1, 1fr);
 
         @include media(sm) {
@@ -16,7 +16,7 @@
         }
 
         @include media(md) {
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
         }
     }
 }
@@ -46,7 +46,7 @@
     .itemTitle {
         margin: Max(8px, 1rem) 0 0 0;
         font-size: Max(18px, 2rem);
-        font-weight: 700;
+        font-weight: 400;
         line-height: Max(24px, 2.6rem);
         text-align: center;
     }

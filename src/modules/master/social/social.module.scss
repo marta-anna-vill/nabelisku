@@ -17,7 +17,7 @@
 
         path,
         rect {
-            stroke: var(--secondary-color);
+            stroke: var(--primary-color);
             transition: 200ms ease-in-out;
         }
     }
@@ -33,7 +33,7 @@
 
             path,
             rect {
-                stroke: var(--primary-color);
+                stroke: var(--secondary-color);
             }
         }
     }

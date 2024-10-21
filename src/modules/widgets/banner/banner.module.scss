@@ -6,8 +6,8 @@
         overflow: hidden;
         min-height: 52rem;
         align-items: center;
-        border-radius: Max(8px, 0.8rem);
-        background-color: var(--secondary-color);
+        border-radius: Max(15px, 1.5rem);
+        background-color: var(--primary-color);
 
         .content {
             position: relative;
@@ -47,6 +47,7 @@
     aspect-ratio: 1 / 1;
     background-color: var(--base-white);
     transition: 200ms ease-in-out;
+    border: 2px solid var(--secondary-color);
 
     svg {
         width: Max(29px, 4rem);
@@ -54,7 +55,7 @@
 
         path,
         rect {
-            stroke: var(--primary-color);
+            stroke: var(--secondary-color);
             transition: 200ms ease-in-out;
         }
     }
@@ -62,6 +63,7 @@
     &:hover,
     &:focus {
         background-color: var(--primary-color);
+        border: 2px solid var(--base-white);
 
         svg {
 
