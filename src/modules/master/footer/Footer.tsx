@@ -15,6 +15,7 @@ export interface IFooter {
     place: string;
     ico: string;
     contactPhone: IContact;
+    contactPhone2: IContact;
     contactEmail: IContact;
 }
 
@@ -30,9 +31,13 @@ export const Footer = (props: IFooter) => {
                             <div className={css[`FooterContactBox`]}>
                                 <Contact {...props.contactPhone} />
                             </div>
+                            <h4>Kontakt pro ubytování a svatbu je do 15. 1. 2025 Marek Zelinka:</h4>
+                            <div className={css[`FooterContactBox`]}>
+                                <Contact {...props.contactPhone2} />
+                            </div>
                         </div>
                         <div className={css[`FooterColumn`]}>
-                            <h3 className={css[`FooterColumn-title`]}>Napiště nám na e-mail</h3>
+                            <h3 className={css[`FooterColumn-title`]}>Napište nám na e-mail</h3>
                             <div className={css[`FooterContactBox`]}>
                                 <Contact {...props.contactEmail} />
                             </div>
@@ -46,7 +51,7 @@ export const Footer = (props: IFooter) => {
                     </div>
                 </div>
                 <div className={css[`Footer-bottom`]}>
-                    <div className={css[`Footer-bottomLogo`]}>Na Bělisku</div>
+                    <div className={css[`Footer-bottomLogo`]}>2024 © Na Bělisku</div>
                     <div className={css[`Footer-bottomLink`]}>
                         <Link href={`/cookies`}>Cookies</Link>
                     </div>

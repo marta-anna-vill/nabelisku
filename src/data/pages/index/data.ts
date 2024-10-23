@@ -7,7 +7,7 @@ import { IPage } from '../../../modules/master/page/page';
 import { ButtonType } from '../../../modules/utilities/button/Button';
 import { WidgetType } from '../../../modules/widgets/shared/widget-builder/WidgetBuilder';
 import { DATA_EMAIL } from '../../master/contact/email/data';
-import { DATA_PHONE } from '../../master/contact/phone/data';
+import { DATA_PHONE, DATA_PHONE2 } from '../../master/contact/phone/data';
 import { DATA_SOCIAL } from '../../master/social/data';
 
 export const DATA_INDEX_PAGE: IPage = {
@@ -118,20 +118,12 @@ Pro všechny hosty jsou k dispozici společné prostory spodního baru a salónk
                         type: WidgetType.Banner,
                         item: {
                             title: `Rezervujte si apartmán nebo termín svatby`,
-                            perex: `Penzion lorem ipsum dolor sit amet lorem ipsum dolor sit amet <a href="${DATA_PHONE.href}">${DATA_PHONE.name}</a> nebo e-mailem <a href="${DATA_EMAIL.href}">${DATA_EMAIL.name}</a>.`,
-                            contactItems: [
-                                {
-                                    href: DATA_PHONE.href,
-                                    iconName: DATA_PHONE.icon,
-                                    target: false,
-                                },
-                            ].concat(
-                                DATA_SOCIAL.records.map((social) => ({
-                                    href: social.url,
-                                    iconName: social.icon,
-                                    target: true,
-                                }))
-                            ),
+                            perex: `Pro rezervaci termínu nebo apartmánu volejte <a href="${DATA_PHONE.href}">${DATA_PHONE.name}</a> nebo pište <br> na e-mail <a href="${DATA_EMAIL.href}">${DATA_EMAIL.name}</a>.`,
+                            contactItems: DATA_SOCIAL.records.map((social) => ({
+                                href: social.url,
+                                iconName: social.icon,
+                                target: true,
+                            })),
                         },
                     },
                     // {
