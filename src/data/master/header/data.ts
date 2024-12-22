@@ -16,10 +16,10 @@ export const DATA_HEADER: IHeader = {
             name: `Ubytování`,
             url: `/#acommodation`,
         },
-        // {
-        //     name: `Svatby`,
-        //     url: `/#weddings`,
-        // },
+        {
+            name: `Galerie Na Bělisku`,
+            url: `/gallery`,
+        },
         // {
         //     name: `Rezervace`,
         //     url: `/#reservation`,
