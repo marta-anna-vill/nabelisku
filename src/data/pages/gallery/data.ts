@@ -95,7 +95,7 @@ export const DATA_GALLERY_PAGE: IPage = {
                                     name: `3D prohlídka`,
                                     href: `https://www.fotografiefirem.cz/iframe.php?id=2332&tour=2373&height=900&l=`,
                                     styles: ButtonType.primary,
-                                    target: `_blank`,
+                                    target: true,
                                 },
                             },
                             {
@@ -109,7 +109,7 @@ export const DATA_GALLERY_PAGE: IPage = {
                                     name: `3D prohlídka`,
                                     href: `https://www.fotografiefirem.cz/iframe.php?id=2332&tour=2373&height=900&l=`,
                                     styles: ButtonType.primary,
-                                    target: `_blank`,
+                                    target: true,
                                 },
                             },
                             {
@@ -123,7 +123,7 @@ export const DATA_GALLERY_PAGE: IPage = {
                                     name: `3D prohlídka`,
                                     href: `https://www.fotografiefirem.cz/iframe.php?id=2332&tour=2370&height=900&l=`,
                                     styles: ButtonType.primary,
-                                    target: `_blank`,
+                                    target: true,
                                 },
                             },
                             // {
@@ -145,7 +145,7 @@ export const DATA_GALLERY_PAGE: IPage = {
                                     name: `3D prohlídka`,
                                     href: `https://www.fotografiefirem.cz/iframe.php?id=2332&tour=2372&height=900&l=`,
                                     styles: ButtonType.primary,
-                                    target: `_blank`,
+                                    target: true,
                                 },
                             },
                             {
@@ -159,7 +159,7 @@ export const DATA_GALLERY_PAGE: IPage = {
                                     name: `3D prohlídka`,
                                     href: `https://www.fotografiefirem.cz/iframe.php?id=2332&tour=2375&height=900&l=`,
                                     styles: ButtonType.primary,
-                                    target: `_blank`,
+                                    target: true,
                                 },
                             },
                             {
@@ -173,11 +173,11 @@ export const DATA_GALLERY_PAGE: IPage = {
                                     name: `3D prohlídka`,
                                     href: `https://www.fotografiefirem.cz/iframe.php?id=2332&tour=2371&height=900&l=`,
                                     styles: ButtonType.primary,
-                                    target: `_blank`,
+                                    target: true,
                                 },
                             },
                             {
-                                title: `Restaurace a terasa `,
+                                title: `Restaurace a terasa`,
                                 perex: `Nachystán je velký svatební sál ve stylu trámové stodoly, romantický svatební pokoj, pódium na soukromé louce určené pro obřad a slunná terasa. Dvojice barů a také prostor pro taneční parket. Svatby na Bělisku mají mnohaletou tradici, proto si rezervujte svůj termín včas.`,
                                 image: {
                                     staticImageData: terasa,
@@ -187,7 +187,7 @@ export const DATA_GALLERY_PAGE: IPage = {
                                     name: `3D prohlídka`,
                                     href: `https://www.fotografiefirem.cz/iframe.php?id=2332&tour=2368&height=900&l=`,
                                     styles: ButtonType.primary,
-                                    target: `_blank`,
+                                    target: true,
                                 },
                             },
                         ],
