@@ -31,10 +31,10 @@ export const Footer = (props: IFooter) => {
                             <div className={css[`FooterContactBox`]}>
                                 <Contact {...props.contactPhone} />
                             </div>
-                            <h4>
+                            {/* <h4>
                                 Pokud chcete stihnout ubytování a svatbu ještě nyní, v termínu do 15. ledna
                                 2025, volejte +420 734 719 139
-                            </h4>
+                            </h4> */}
                         </div>
                         <div className={css[`FooterColumn`]}>
                             <h3 className={css[`FooterColumn-title`]}>Napište nám na e-mail</h3>
